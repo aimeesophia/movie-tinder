@@ -5,7 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Content Include="Content\sass\01-settings\_settings.scss" />
+    <Content Include="Content\sass\02-tools\_tools.scss" />
+    <Content Include="Content\sass\03-generic\_generic.scss" />
+    <Content Include="Content\sass\04-elements\_elements.scss" />
+    <Content Include="Content\sass\05-objects\_objects.scss" />
+    <Content Include="Content\sass\06-components\_components.scss" />
+    <Content Include="Content\sass\07-trumps\_trumps.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
   </ItemGroup>
 
 </Project>
