@@ -1,0 +1,24 @@
+{
+  "name": "movietinder",
+  "version": "1.0.0",
+  "description": "A Tinder-like web app for selecting movies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aimeesophia/movie-tinder.git"
+  },
+  "author": "Aimee Simmons",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aimeesophia/movie-tinder/issues"
+  },
+  "homepage": "https://github.com/aimeesophia/movie-tinder#readme",
+  "dependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
