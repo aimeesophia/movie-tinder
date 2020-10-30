@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MovieTinder.Context;
+using MovieTinder.Interfaces;
+using MovieTinder.ModelBuilders;
 
 namespace MovieTinder
 {
@@ -28,6 +30,8 @@ namespace MovieTinder
             services.AddControllersWithViews();
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseMySQL(Configuration.GetConnectionString("LocalConnection")));
+
+            services.AddTransient<IMovieViewModelBuilder, MovieViewModelBuilder>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

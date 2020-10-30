@@ -36,16 +36,19 @@ namespace MovieTinder.Migrations
                         new
                         {
                             Id = 1,
-                            Title = "Nightmare Before Christmas"
+                            Description = "Jack Skellington, king of Halloween Town, discovers Christmas Town, but his attempts to bring Christmas to his home causes confusion.",
+                            Title = "The Nightmare Before Christmas"
                         },
                         new
                         {
                             Id = 2,
+                            Description = "Four weeks after a mysterious, incurable virus spreads throughout the UK, a handful of survivors try to find sanctuary.",
                             Title = "28 Days Later"
                         },
                         new
                         {
                             Id = 3,
+                            Description = "A young widow discovers that her late husband has left her 10 messages intended to help ease her pain and start a new life.",
                             Title = "P.S. I Love You"
                         });
                 });

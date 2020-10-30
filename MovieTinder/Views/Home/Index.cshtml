@@ -1,5 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model MovieTinder.ViewModels.MovieViewModel
+
+@{
+    ViewData["Title"] = "Home";
 }
 
 <h1>Movie Tinder</h1>
+
+<h2>@Model.Title</h2>
+<p>@Model.Description</p>
+
+<br/>
+
+<button>Next</button>
