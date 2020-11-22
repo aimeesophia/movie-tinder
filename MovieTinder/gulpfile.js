@@ -6,10 +6,12 @@ var del = require("del");
 
 var paths = {
     src: {
-        css: './Content/sass/**/*.scss'
+        css: './Content/sass/**/*.scss',
+        jquery: './Content/scripts/lib/jquery/jquery.js'
     },
     dest: {
-        css: './wwwroot/css'
+        css: './wwwroot/css',
+        jquery: './wwwroot/js/lib/jquery'
     }
 }
 
@@ -25,4 +27,9 @@ function compileSass() {
         .pipe(gulp.dest(paths.dest.css));
 }
 
-exports.build = gulp.series(clean, compileSass);
+function copyJquery() {
+    return gulp.src(paths.src.jquery)
+        .pipe(gulp.dest(paths.dest.jquery));
+}
+
+exports.build = gulp.series(clean, compileSass, copyJquery);

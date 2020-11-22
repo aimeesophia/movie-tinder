@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MovieTinder.Context;
 using MovieTinder.Interfaces;
 
 namespace MovieTinder.Controllers
